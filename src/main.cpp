@@ -1,13 +1,14 @@
 #include <Arduino.h>
-#include <IRremote.hpp>
+
+#include "debug.h"
 
 void setup()
 {
-    Serial.begin(115200);
-    Serial.println("START!");
+    DEBUG_INIT(115200, 10000);
+    DEBUG_PRINTLN("Start!");
 }
 
 void loop()
 {
-    
+    // nothing for now here!
 }
